@@ -1,0 +1,25 @@
+Project Synopsis & Features/File Structure/ Implementation of Main Files
+
+
+PROJECT SYNOPSIS & Features : An andorid application which allows user to connect to flight gear application and 
+                              set rudder, thorttle, aileron and elevator (and basicly fly the plane) with a controller.
+
+File Structure :
+            Joystick.java             |java|com.example.flightGearAndroidApp
+            MainActivity.java         |java|com.example.flightGearAndroidApp
+            Model.java                |java|com.example.flightGearAndroidApp
+            ViewModel.java            |java|com.example.flightGearAndroidApp
+            attr.xml                  |res|values
+            
+Implementation of Main Files:
+
+                             attr.xml                         : decleration of joystick attributes. (x and y for locatin, and colors for joystick's parts) 
+                              
+                             Joystick.java                    : custom view class that implement the "onTouchEvent", convert view touching (joystick touching) into
+                                                                aileron and elevator values.
+                                                                
+                             Model.java                       : contain all the logic - create connection with FG server, convert throttle and rudder seekbars 
+                                                                values to the real throttle and ruuder values.
+                              
+                             ViewModel:                       : expose model fileds and use it logic
+         
