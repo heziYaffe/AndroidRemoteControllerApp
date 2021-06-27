@@ -83,9 +83,6 @@ public class Model {
         Thread t = new Thread() {
             public void run() {
                 try {
-                    //192.168.0.121
-                    //192.168.56.1
-                    //8080
                     Socket fg;
                     PrintWriter out;
                     int portAsInt = tryParse(port);
@@ -121,10 +118,13 @@ public class Model {
                         }
                     }
                 } catch(SocketTimeoutException e) {
+                    isConnected = false;
                     e.printStackTrace();
                 } catch (IOException e) {
+                    isConnected = false;
                     e.printStackTrace();
                 } catch (Exception e) {
+                    isConnected = false;
                     e.printStackTrace();
                 }
             }
