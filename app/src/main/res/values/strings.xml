@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android App</string>
+    <string name="heading">FG remote controller</string>
+    <string name="ip_hint">Enter IP number</string>
+    <string name="port_hint">Enter Port number</string>
+    <string name="button_text">Connect</string>
+</resources>
